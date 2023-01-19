@@ -1,7 +1,7 @@
-# Stroyline
+# Storyline
 
 - Motivation
-  - Why talk about cloud native without microservicec
+  - Why talk about cloud native without microservices
 - Definitions
   - Cloud native
   - microservices
@@ -12,4 +12,4 @@
   - Monolith
   - FaaS
   - Serverless
-- Pros n Cons
+- Cloud native Pros n Cons
