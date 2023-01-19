@@ -8,8 +8,9 @@
   - CICD
   - etc
 - Cloud Native Main Pillars/Concepts
-- Alternatives to Microservices
+- Other common architectures
   - Monolith
   - FaaS
   - Serverless
+  - Event-driven
 - Cloud native Pros n Cons
