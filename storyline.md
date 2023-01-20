@@ -15,4 +15,5 @@
   - FaaS
   - Serverless
   - Event-driven
-- Cloud native Pros n Cons
+- Cloud native Pros n Cons (maybe not this)
+- Use cases and ilustrative examples
