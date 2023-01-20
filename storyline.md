@@ -8,6 +8,8 @@
   - CICD
   - etc
 - Cloud Native Main Pillars/Concepts
+  - Continuos Updates/Deployments
+  - Fail recovery/Redundancy
 - Other common architectures
   - Monolith
   - FaaS
