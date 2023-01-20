@@ -6,14 +6,16 @@
   - Cloud native
   - microservices
   - CICD
-  - etc
 - Cloud Native Main Pillars/Concepts
-  - Continuos Updates/Deployments
+  - Continuous Updates/Deployments
   - Fail recovery/Redundancy
+  - Security
+  - Monitoring
 - Other common architectures
-  - Monolith
+  - Monolithic 
   - FaaS
   - Serverless
   - Event-driven
+  - Micro-frontend
 - Cloud native Pros n Cons (maybe not this)
 - Use cases and illustrative examples
