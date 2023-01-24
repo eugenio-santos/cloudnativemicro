@@ -1,21 +1,18 @@
 # Storyline
 
-- Motivation
-  - Why talk about cloud native without microservices
 - Overview
+  - Why talk about cloud native without microservices
   - Cloud native
-  - microservices
+  - Microservices
   - CICD
 - Cloud Native Main Pillars/Concepts
   - Continuous Updates/Deployments
   - Fail recovery/Redundancy
   - Security
   - Monitoring
-- Other common architectures
+- Use cases and illustrative examples
   - Monolithic 
   - FaaS
   - Serverless
   - Event-driven
   - Micro-frontend
-- Cloud native Pros n Cons (maybe not this)
-- Use cases and illustrative examples
