@@ -10,9 +10,13 @@
   - Fail recovery/Redundancy
   - Security
   - Monitoring
-- Use cases and illustrative examples
+  - Replication/Scalability
+- Other possible architectures
   - Monolithic 
   - FaaS
   - Serverless
   - Event-driven
   - Micro-frontend
+- Use cases in industry (here we want to describe some pratical cases with some illustrations, basing also in the previous topic)
+  - [Uber Apache Pinot](https://www.uber.com/en-PT/blog/operating-apache-pinot/)
+  - [Netflix Chaos Eng](https://netflixtechblog.com/chaos-engineering-upgraded-878d341f15fa)
