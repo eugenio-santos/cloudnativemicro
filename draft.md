@@ -22,7 +22,7 @@ The boost of the microservices was caused by the growth of cloud-native tools in
 
 Let’s go deeper into a common microservice architecture and how it’s easier to implement a distributed system without the complexity that we faced back in the old days.
 
-«image here»
+[microservices](microservices.png)
 
 The previous diagram illustrates a very simple architecture of how microservices can be implemented. Each of the represented services has its own code repository and they work independently of each other.
 
