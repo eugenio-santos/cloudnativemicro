@@ -40,7 +40,7 @@ The testing is more manageable if you are talking about the unit tests because t
 
 The communication between the different microservices starts to use the network and with that, all the problems associated with it start to appear. Instead of the flow passing through the same application we need to define interfaces to allow this communication, mainly using REST APIs. This can not be a problem, however, if we start dealing with huge payloads in this communication through the network, you probably will see some latency.
 
-At xgeeks we believe good engineering is understanding the problem and tackling it with the best tool, not the trendy tool and this post aims to show how we look at cloud-native plus microservices and demystify its hype. So, let's go deep on it.
+At xgeeks we believe good engineering is understanding the problem and tackling it with the best tool, not the trendy tool and this post aims to show how we look at cloud-native plus microservices and demystify its hype. So, let's go deep into it.
 
 ## Most of the time you can solve it with a monolith
 
@@ -89,8 +89,6 @@ If you are thinking in design a system based on microservices, you must know tha
 * Providing service discovery and load balancing;
 * Define security measures through the services.
 
-As mentioned before, and it's never enough to rembember that, you don't need to go right away to this architecture, you should first go simple with a monolith, prioritizing the modules definition and then it will be easier to implement them with microservices if its use brings any benefit to the final product.
-
 Apart from the microservices, in xgeeks we follow some principles to ensure that distributed teams can contribute to the system independently by following three main principles:
 
 1. Code design
@@ -103,6 +101,8 @@ Taking the previous topic, in xgeeks we believe the best way to organize teams i
 
 3. Independent release pipeline
 Since we have our code design properly defined and it has the domain's context well defined, we not only have the teams split by domain, but also we can define different and independent releases pipelines.
+
+Following these points mentioned before, we have all the advantages that most of the time are wrongly strictly linked to the microservices, but as we explained in the previous sections, these advantages are more related with the code design and the way we implement the modules in the software. So, we usually start with a modular monolith and then we migrate it by implementing microservices at the time we need to do it in order to improve the system. Once again, we don't need to implement microservices if we don't take benefit from it, this is just the usual path in the development cycle.
 
 ## Final thoughts
 
