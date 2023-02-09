@@ -104,6 +104,17 @@ Since we have our code design properly defined and it has the domain's context w
 
 Following these points mentioned before, we have all the advantages that most of the time are wrongly strictly linked to the microservices, but as we explained in the previous sections, these advantages are more related to the code design and the way we implement the modules in the software. So, we usually start with a modular monolith and then we migrate it by implementing microservices at the time we need to do it in order to improve the system. Once again, we don't need to implement microservices if we don't take benefit from them, this is just the usual path in the development cycle.
 
+## Migrate a monolith to microservices
+The usual scenarios we see today are the need to migrate an huge monolith application and rewrite it using a different architecture and sometimes a different programming language.
+
+This kind of migration can take different paths but usually it passes to define to desired architecture we want to reach and divide the process into different phases. Defining migration phases allow us to iterate over the time the different parts of the system, which sometimes we have part of the old monolith working together with the new services.
+
+As you might know, this migration is not all about changing the monolith into microservices, but it is also an opportunity to re-write some functionalities and choose other technologies that fits better our needs. For example, you might consider to use a different programming language or even include event-driven in some parts of you system.
+
+If you are passing for a migration process, **you shouldn't do it all at once.** The idea is to divide all the sections of the new architecture and start developing them independently of each other, allowing to put different teams working in parallel. Once you get 
+
+
+
 ## Final thoughts
 
 As with everything in software engineering, in xgeeks, we take all the information about one solution and verify if it resolves properly our problem, without generating other ones more complex.
