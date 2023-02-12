@@ -102,7 +102,7 @@ Taking the previous topic, in xgeeks we believe the best way to organize teams i
 3. Independent release pipeline
 Since we have our code design properly defined and it has the domain's context well defined, we not only have the teams split by domain, but also we can define different and independent releases pipelines.
 
-Following these points mentioned before, we have all the advantages that most of the time are wrongly strictly linked to the microservices, but as we explained in the previous sections, these advantages are more related to the code design and the way we implement the modules in the software. So, we usually start with a modular monolith and then we migrate it by implementing microservices at the time we need to do it in order to improve the system. Once again, we don't need to implement microservices if we don't take benefit from them, this is just the usual path in the development cycle.
+Following these points mentioned before, we have all the advantages that most of the time are, wrongly, only linked to microservices, but as we explained in the previous sections, these advantages are more related to the code design and the way we implement the modules in the software. So, we usually start with a modular monolith and then we migrate it by implementing microservices at the time we need to do it in order to improve the system. Once again, we don't need to implement microservices if we don't take benefit from them, this is just the usual path in the development cycle.
 
 ## Migrate a monolith to microservices
 The usual scenarios we see today are the need to migrate an huge monolith application and rewrite it using a different architecture and sometimes a different programming language.
