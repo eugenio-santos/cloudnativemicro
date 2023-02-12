@@ -111,7 +111,7 @@ This kind of migration can take different paths but usually it passes to define 
 
 As you might know, this migration is not all about changing the monolith into microservices, but it is also an opportunity to re-write some functionalities and choose other technologies that fits better our needs. For example, you might consider the use of a different programming language or even include event-driven in some parts of you system.
 
-If you are passing for a migration process, **you shouldn't do it all at once.** The idea is to divide all the sections of the new architecture and start developing them independently of each other, allowing to put different teams working in parallel. Once you get 
+If you are going through a migration process, **you shouldn't do it all at once.** The idea is to divide all the sections of the new architecture and start developing them independently of each other, allowing to put different teams working in parallel. Once you get 
 
 
 
