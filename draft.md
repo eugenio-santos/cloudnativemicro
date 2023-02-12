@@ -20,7 +20,7 @@ The boost of the microservices was caused by the growth of cloud-native tools in
 
 ## It’s a trend, we need to use it everywhere
 
-Since it was easier to implement and became somehow a trend in software architecture, its use of it became the first option independent of this case we are working on.
+ Since it was easier to implement and became somehow a trend in software architecture, its use became the first option independent of which case we are working on.
 
 We are all aware of the advantages of microservices, such as:
 
