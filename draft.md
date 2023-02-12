@@ -38,7 +38,7 @@ We usually say that microservices reduce the complexity of the application, but 
 
 The testing is more manageable if you are talking about the unit tests because they are restricted to the microservice you are testing. However, integration tests become a nightmare. In this architecture, you can’t test all the microservices involved on a specific functionality locally, even to integrate them in your pipeline, you will need to build an independent test environment and use an external tool to run the tests. Resuming, more complexity and more costs to your pocket since we need more resources to implement the test environment.
 
-The communication between the different microservices starts to use the network and with that, all the problems associated with it start to appear. Instead of the flow passing through the same application we need to define interfaces to allow this communication, mainly using REST APIs. This can not be a problem, however, if we start dealing with huge payloads in this communication through the network, you probably will see some latency.
+ The communication between the different microservices starts to use the network and with that, all the problems associated with it start to appear. Instead of the flow passing through the same process we need to define interfaces to allow this communication, mainly using the network. This might not be a problem, however, you will always introduce asynchronous processes and latency.
 
 At xgeeks we believe good engineering is understanding the problem and tackling it with the best tool, not the trendy tool and this post aims to show how we look at cloud-native plus microservices and demystify its hype. So, let's go deep into it.
 
