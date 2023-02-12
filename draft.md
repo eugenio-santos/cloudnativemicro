@@ -80,7 +80,7 @@ In fact, choosing to follow this architecture in the early stages of a project, 
 
 So, the question you need to ask is “When should I use a microservices architecture?”
 
-If you are thinking in design a system based on microservices, you must know that are some requirements you must grant, otherwise, adopting this architecture without taking this in consideration, can lead you to chaos. There are some requirements that you must take note:
+If you are thinking in design a system based on microservices, you must know that are some requirements you must adhere to:
 
 * You have a standard logging format across the multiple services in order to achieve the centralization;
 * The services expose metrics in a common way to implement the monitoring and alerting systems;
