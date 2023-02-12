@@ -87,7 +87,7 @@ If you are thinking in design a system based on microservices, you must know tha
 * Each service must have an independent integration and deployment process;
 * Grant data isolation in a way that just the service in that domain has access to it;
 * Providing service discovery and load balancing;
-* Define security measures through the services.
+* Define security measures throughout the services.
 
 Apart from the microservices, in xgeeks we follow some principles to ensure that distributed teams can contribute to the system independently by following three main principles:
 
