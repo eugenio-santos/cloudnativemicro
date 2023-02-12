@@ -83,7 +83,7 @@ So, the question you need to ask is “When should I use a microservices archite
 If you are thinking in design a system based on microservices, you must know that are some requirements you must adhere to:
 
 * You have a standard logging format across the multiple services in order to achieve centralization;
-* The services expose metrics in a common way to implement the monitoring and alerting systems;
+* The services expose metrics in a common way to implement monitoring and alerting systems;
 * Each service must have an independent integration and deployment process;
 * Grant data isolation in a way that just the service in that domain has access to it;
 * Providing service discovery and load balancing;
