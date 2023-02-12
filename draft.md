@@ -15,7 +15,7 @@ These principles were defined back in the 70s and they are referring to the good
 The boost of the microservices was caused by the growth of cloud-native tools in the last years that turn it easy to apply it in every software solution we see today. Most of the cloud solutions prioritize automation, virtualization and containerization, leading us to different kinds of infrastructure we were used to, mainly because it turned easy to implement a distributed system in form of microservices. Some of the tools that contributed to this boost were:
 
 * Docker: which popularized containerization;
-* Kubernetes: that allowed to orchestrate of the containers and all the infrastructure around them;
+ * Kubernetes: that allowed to orchestrate containers and all the infrastructure around them;
 * CI/CD tools: such as GitHub Actions or Flux CD, contribute mainly to simplifying the deployments of new features, integrating them easily and quickly in a production environment.
 
 ## It’s a trend, we need to use it everywhere
