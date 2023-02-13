@@ -15,54 +15,12 @@ These principles were defined back in the 70s and they are referring to the good
 The boost of the microservices was caused by the growth of cloud-native tools in the last years that turn it easy to apply it in every software solution we see today. Most of the cloud solutions prioritize automation, virtualization and containerization, leading us to different kinds of infrastructure we were used to, mainly because it turned easy to implement a distributed system in form of microservices. Some of the tools that contributed to this boost were:
 
 * Docker: which popularized containerization;
-* Kubernetes: that allowed to orchestrate of the containers and all the infrastructure around them;
+ * Kubernetes: that allowed to orchestrate containers and all the infrastructure around them;
 * CI/CD tools: such as GitHub Actions or Flux CD, contribute mainly to simplifying the deployments of new features, integrating them easily and quickly in a production environment.
-
-## Implementing microservices is easier nowadays
-
-Let’s go deeper into a common microservice architecture and how it’s easier to implement a distributed system without the complexity that we faced back in the old days.
-
-[microservices](microservices.png)
-
-The previous diagram illustrates a very simple architecture of how microservices can be implemented. Each of the represented services has its own code repository and they work independently of each other.
-
-Since they have different code repositories, different teams can work in parallel without affecting the workflow of the other application.
-
-Another advantage here, it’s the possibility to use containers to deploy our application instead of using only virtualization and running the application directly on it. So, Docker has an important role here since it allows us to recreate and start the application faster and easier.
-
-In terms of infrastructure, we commonly see Kubernetes in most of the cloud-native solutions. Kubernetes working together with Docker offer the developer an easier way to define some points of the application infrastructure without the need to implement mechanisms to do so. One of the best examples is the Deployment resource of Kubernetes. There we can define the number of replicas, the type of deployment and define other containers to run together with the application on the same pod.
-
-If you are not familiar with Kubernetes, Pod is the smallest deployable unit which can contain one or more containers. The replicas are defined at the Pod level.
-
-So, we just need to define a couple of YAML files representing the resources we want to create in the Kubernetes cluster and apply it. Note that this is a simple example and the complexity of the problem affects consequently the way we need to build the solution.
-
-Since we can define the infrastructure in a declarative way, we can put these files in our application repository as well and use the code versioning tool to manage the changes and the upgrades made on it.
-
-At this point, we have our repository with all we need to deploy the application, so that’s the time we can bring to the table the CI/CD tools. If you are using GitHub, you may know about GitHub Actions.
-
-With this tool, we can define our pipelines affecting the specific repository with all the steps until the deployment in production. This includes the common steps we should have on the pipeline, like the build step, the testing phase, the deployment on a test environment and finally the deployment in production.
-
-Of course, you may need to adapt this CI/CD pipeline according to your needs and the application's complexity.
-
-## Implementing this back in the early 21st century
-
-Let’s go to a little exercise and go back in time to see how difficult it is to implement the same architecture.
-
-Imagine a world without Kubernetes and Docker. It’s painful, I know, but we have already been there.
-
-Without Docker or any other solution for containerization, we probably would need to use virtual machines, and each VM represents a replica of our service. Otherwise, you may choose to use different instances in the same VM to replicate the application, but you are not really doing the same as we do with Kubernetes, assuming you have the pod replicas in different nodes.
-
-Following this approach, one VM for each replica of your application, can you imagine the cost of it? The virtual machines can take a lot of storage space from their host and the capacity of regeneration as we see with containers is quite slow because we need to rebuild the image with all the systems installed on it.
-
-Then you probably would have an ESB working as a middleware to establish a common place to manage the communication between the different services, providing also load balancing and service discovery.
-
-Are you imagine presenting this solution back then? Yeah, probably not. At this point, you are remembering why microservices weren’t a solution or even an idea in our heads in terms of architectural design.
-
-Now we can understand how some tools, such as Kubernetes and Docker, launched microservices into the spotlight and turn it into tech trends in the last few years.
 
 ## It’s a trend, we need to use it everywhere
 
-Since it was easier to implement and became somehow a trend in software architecture, its use of it became the first option independent of this case we are working on.
+ Since it was easier to implement and became somehow a trend in software architecture, its use became the first option independent of which case we are working on.
 
 We are all aware of the advantages of microservices, such as:
 
@@ -80,9 +38,9 @@ We usually say that microservices reduce the complexity of the application, but 
 
 The testing is more manageable if you are talking about the unit tests because they are restricted to the microservice you are testing. However, integration tests become a nightmare. In this architecture, you can’t test all the microservices involved on a specific functionality locally, even to integrate them in your pipeline, you will need to build an independent test environment and use an external tool to run the tests. Resuming, more complexity and more costs to your pocket since we need more resources to implement the test environment.
 
-The communication between the different microservices starts to use the network and with that, all the problems associated with it start to appear. Instead of the flow passing through the same application we need to define interfaces to allow this communication, mainly using REST APIs. This can not be a problem, however, if we start dealing with huge payloads in this communication through the network, you probably will see some latency.
+ The communication between the different microservices starts to use the network and with that, all the problems associated with it start to appear. Instead of the flow passing through the same process we need to define interfaces to allow this communication, mainly using the network. This might not be a problem, however, you will always introduce asynchronous processes and latency.
 
-At xgeeks we believe good engineering is understanding the problem and tackling it with the best tool, not the trendy tool and this post aims to show how we look at cloud-native plus microservices and demystify its hype.
+At xgeeks we believe good engineering is understanding the problem and tackling it with the best tool, not the trendy tool and this post aims to show how we look at cloud-native plus microservices and demystify its hype. So, let's go deep into it.
 
 ## Most of the time you can solve it with a monolith
 
@@ -112,22 +70,24 @@ When we talk about modularity, two big concepts arise, coupling and cohesion. He
 
 `"Cohesion and coupling are concerns regarding modular software, and what is microservice architecture other than modules that communicate via networks and can be independently deployed?"`
 
-Just to reiterate, modularity is one of the biggest concerns of microservices, but that is not inherent to them that comes from a project that has been designed and structured to have the highest standard of software design.
+Just to reiterate, modularity is one of the biggest concerns of microservices, but that is not inherent to them, which comes from a project that has been designed and structured to have the highest standard of software design.
 
 ## It’s not “if”, but “when”
 
 As we have discussed so far, the point is not if we should use microservices, but when this architecture fits better.
 
-In fact, choosing to follow this architecture in the early stages of a project, without having the support and the expertise on the team side, will create an impact on the solution and more precisely on the business.
+In fact, choosing to follow this architecture in the early stages of a project, without having the support and the expertise on the team side, will create a negative impact on the solution and more precisely on the business.
 
 So, the question you need to ask is “When should I use a microservices architecture?”
 
-There are some guidelines that can help you understand when you should use this approach:
+If you are thinking in design a system based on microservices, you must know that are some requirements you must adhere to:
 
-* You need to migrate a monolithic application in order to improve scalability.
-* Common services that work independently in the system where it is implemented, for example, authentication services.
-* You require that your services be highly scalable and easier to implement continuous delivery in terms of new features.
-* You have already an infrastructure and a team capable to give support to the system.
+* You have a standard logging format across the multiple services in order to achieve centralization;
+* The services expose metrics in a common way to implement monitoring and alerting systems;
+* Each service must have an independent integration and deployment process;
+* Grant data isolation in a way that just the service in that domain has access to it;
+* Providing service discovery and load balancing;
+* Define security measures throughout the services.
 
 Apart from the microservices, in xgeeks we follow some principles to ensure that distributed teams can contribute to the system independently by following three main principles:
 
@@ -141,6 +101,18 @@ Taking the previous topic, in xgeeks we believe the best way to organize teams i
 
 3. Independent release pipeline
 Since we have our code design properly defined and it has the domain's context well defined, we not only have the teams split by domain, but also we can define different and independent releases pipelines.
+
+Following these points mentioned before, we have all the advantages that most of the time are, wrongly, only linked to microservices, but as we explained in the previous sections, these advantages are more related to the code design and the way we implement the modules in the software. So, we usually start with a modular monolith and then we migrate it by implementing microservices at the time we need to do it in order to improve the system. Once again, we don't need to implement microservices if we don't take benefit from them, this is just the usual path in the development cycle.
+
+## Migrate a monolith to microservices
+The usual scenarios we see today are the need to migrate an huge monolith application and rewrite it using a different architecture and sometimes a different programming language.
+
+This kind of migration can take different paths, but usually, we start to define the desired architecture we want to reach and divide the process into different phases. Defining migration phases allow us to iterate over the time the different components of the system, which sometimes we have part of the old monolith working together with the new services.
+
+As you might know, this migration is not all about changing the monolith into microservices, but it is also an opportunity to re-write some functionalities and choose other technologies that fits better our needs. For example, you might consider the use of a different programming language or even include some other architectures in some parts of you system.
+
+If you are going through a migration process, **you shouldn't do it all at once.** The idea is to divide all the sections of the new architecture and start developing them independently of each other, allowing to put different teams working in parallel. Once you get a module ready, you are able to start using it even if the rest is not done yet. 
+
 
 ## Final thoughts
 
