@@ -107,7 +107,7 @@ Following these points mentioned before, we have all the advantages that most of
 ## Migrate a monolith to microservices
 The usual scenarios we see today are the need to migrate an huge monolith application and rewrite it using a different architecture and sometimes a different programming language.
 
-This kind of migration can take different paths but usually it passes to define to desired architecture we want to reach and divide the process into different phases. Defining migration phases allow us to iterate over the time the different parts of the system, which sometimes we have part of the old monolith working together with the new services.
+This kind of migration can take different paths, but usually, we start to define the desired architecture we want to reach and divide the process into different phases. Defining migration phases allow us to iterate over the time the different components of the system, which sometimes we have part of the old monolith working together with the new services.
 
 As you might know, this migration is not all about changing the monolith into microservices, but it is also an opportunity to re-write some functionalities and choose other technologies that fits better our needs. For example, you might consider the use of a different programming language or even include some other architectures in some parts of you system.
 
