@@ -109,10 +109,9 @@ The usual scenarios we see today are the need to migrate an huge monolith applic
 
 This kind of migration can take different paths but usually it passes to define to desired architecture we want to reach and divide the process into different phases. Defining migration phases allow us to iterate over the time the different parts of the system, which sometimes we have part of the old monolith working together with the new services.
 
-As you might know, this migration is not all about changing the monolith into microservices, but it is also an opportunity to re-write some functionalities and choose other technologies that fits better our needs. For example, you might consider the use of a different programming language or even include event-driven in some parts of you system.
+As you might know, this migration is not all about changing the monolith into microservices, but it is also an opportunity to re-write some functionalities and choose other technologies that fits better our needs. For example, you might consider the use of a different programming language or even include some other architectures in some parts of you system.
 
-If you are going through a migration process, **you shouldn't do it all at once.** The idea is to divide all the sections of the new architecture and start developing them independently of each other, allowing to put different teams working in parallel. Once you get 
-
+If you are going through a migration process, **you shouldn't do it all at once.** The idea is to divide all the sections of the new architecture and start developing them independently of each other, allowing to put different teams working in parallel. Once you get a module ready, you are able to start using it even if the rest is not done yet. 
 
 
 ## Final thoughts
