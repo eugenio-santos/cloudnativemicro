@@ -70,7 +70,7 @@ When we talk about modularity, two big concepts arise, coupling and cohesion. He
 
 `"Cohesion and coupling are concerns regarding modular software, and what is microservice architecture other than modules that communicate via networks and can be independently deployed?"`
 
-Just to reiterate, modularity is one of the biggest concerns of microservices, but that is not inherent to them, which comes from a project that has been designed and structured to have the highest standard of software design.
+Just to reiterate, modularity is one of the biggest concerns of microservices, but that is not inherent to them, that comes from a project that has been designed and structured to have the highest standard of software design.
 
 ## It’s not “if”, but “when”
 
