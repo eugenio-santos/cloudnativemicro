@@ -64,7 +64,7 @@ The bottom line, modularity comes more from domain separation than from pieces o
 
 Just like in microservices, you can make use of another design pattern to implement your modular monolith. DDD is a good example of it, you can start with somewhat big modules that encapsulate a bounded context, that you can further break apart into multiple modules each with fewer aggregates.
 
-One thing you cannot do with a monolith is used multiple languages, but in the real world, rare is the case that there is a real need to use specific technologies for certain tasks and to be able to develop and support a heterogeneous system, you need a mature and robust organization. Otherwise, you are just going to end up with bad code in different languages, or with whole parts of the system only owned by a very small group of very expensive specialists.
+One thing you cannot do with a monolith is use multiple languages, but in the real world, rare is the case that there is a justifiable need to use specific technologies for certain tasks, and to be able to develop and support a heterogeneous system, you need a mature and robust organization. Otherwise, you are just going to end up with bad code in different languages, or with whole parts of the system only owned by a very small group of very expensive specialists.
 
 When we talk about modularity, two big concepts arise, coupling and cohesion. Here Sam Newman said it best in his book, Monolith to Microservices:
 
