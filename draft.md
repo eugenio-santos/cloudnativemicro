@@ -51,6 +51,7 @@ Here we argue that most of the benefits of microservices can be achieved with a 
 If the separation of domains is not clear and concise, then you end up with a distributed monolith, which is one of the biggest pitfalls of microservices. So if you implement a truly modular monolith you are much closer to migrating to microservices if needed.
 
 The ability to deploy a single part of your system is one of the hallmarks of microservices. Let’s say you update a feature and you want to do some beta testing in production, you are now able to deploy the affected service and only route 10% of your requests. Again monoliths can achieve the same, if code is structured in a way that a new feature doesn’t touch multiple contexts, then from the programmer’s point of view it's just the same. The caveat is that you have to deploy the whole system, which incurs more costs, something we’ll look into in more detail further ahead.
+![monolith_microservices](monolith_microservices.png "Monolith vs microservices")
 
 Reliability is another big topic, but reliability is more about using cloud-native tools and the way you use them. It's not because Netflix uses a microservice architecture that their application has close to zero downtime. It’s the strategies and methodologies they put in place that allow them to keep operating as usual when a whole AWS region becomes unstable. (lint to chaos monkey article here)
 
