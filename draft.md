@@ -83,7 +83,7 @@ So, the question you need to ask is “When should I use a microservices archite
 If you are thinking in design a system based on microservices, you must know that are some requirements you must adhere to:
 
 * You have a standard logging format across the multiple services in order to achieve centralization;
-* The services expose data in a common way to implement [observability systems](https://medium.com/xgeeks/challenges-and-solutions-of-observability-in-cloud-native-applications-32bf7b9a8425);
+* The services expose metrics and data in a common way to implement [observability systems](https://medium.com/xgeeks/challenges-and-solutions-of-observability-in-cloud-native-applications-32bf7b9a8425);
 * Each service must have an independent integration and deployment process;
 * Grant data isolation in a way that just the service in that domain has access to it;
 * Providing service discovery and load balancing;
