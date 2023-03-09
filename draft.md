@@ -57,6 +57,8 @@ Reliability is another big topic, but reliability is more about using cloud-nati
 Just like with microservices, with monoliths, you can still apply various design patterns like DDD. One of the benefits of having a full microservice architecture is that data is bounded to its own domain, and each microservice has its own data storage. That guarantees that some other piece of code(or service) won’t do unexpected changes to that data.
 Again monoliths can achieve this! Even if the database server is shared by all modules, if well implemented a great deal of domain separation can be achieved with proper design.
 
+![ddd](ddd.png "DDD")
+
 A good modularized architecture with clear domain separation, won’t get in the way of your organization and the way you structure teams. You can still build teams around certain contexts. At xgeeks we keep that in mind, where a team is tasked with developing a finite number of modules (or microservices) that encapsulate a set of features, that way we allow our engineers to be specialists in their own domain, with full ownership.
 Git is an amazing tool and when you’re able to implement a new feature without making changes across multiple domains (unless required by the nature of the feature), integrating new code is not much more complicated than managing it across multiple repositories, in some scenarios it might even be the best option. Managing a mono repository has its complications, but it has the advantage that your CI/CD pipelines are all in one place.
 
