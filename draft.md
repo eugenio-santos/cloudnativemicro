@@ -61,7 +61,7 @@ Again monoliths can achieve this! Even if the database server is shared by all m
 ![ddd](ddd.png "DDD")
 
 A good modularized architecture with clear domain separation, won’t get in the way of your organization and the way you structure teams. You can still build teams around certain contexts. At xgeeks we keep that in mind, where a team is tasked with developing a finite number of modules (or microservices) that encapsulate a set of features, that way we allow our engineers to be specialists in their own domain, with full ownership.
-Git is an amazing tool and when you’re able to implement a new feature without making changes across multiple domains (unless required by the nature of the feature), integrating new code is not much more complicated than managing it across multiple repositories, in some scenarios it might even be the best option. Managing a mono repository has its complications, but it has the advantage that your CI/CD pipelines are all in one place.
+Git is an amazing tool and when you’re able to implement a new feature without making changes across multiple domains (unless required by the nature of the feature), integrating new code is not much more complicated than managing it across multiple repositories, in some scenarios it might even be the best option.
 
 The bottom line, modularity comes more from domain separation than from pieces of code running in multiple containers.
 
